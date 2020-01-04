@@ -31,7 +31,7 @@ public class FindExceptions {
         try {
             int i = 3/0;
         } catch (Exception e) {
-            System.out.println("除0异常");
+            System.out.println("算数异常");
         }
     }
 }

@@ -11,6 +11,7 @@ public class User implements Cloneable{
     private Contract contract;
 
     @Override
+    // 深克隆
     protected Object clone() throws CloneNotSupportedException {
         User u = (User) super.clone();
         Contract c = (Contract) u.getContract().clone();
