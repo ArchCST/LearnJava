@@ -32,7 +32,7 @@ public class PractiseCalendar {
     // 2028年的2月一共有多少天？
     public static void howManyDaysInFeb(){
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2028,1,29);
+        calendar.set(2028, Calendar.FEBRUARY,29);
 
         calendar.set(Calendar.MONTH, 2);
         calendar.set(Calendar.DATE, 1);
@@ -44,10 +44,7 @@ public class PractiseCalendar {
     // 去年的今天是哪一天？
     public static void  lastYearToday(){
         Calendar calendar = Calendar.getInstance();
-//        calendar.set(Calendar.YEAR, calendar.get(Calendar.YEAR) - 1);
         calendar.add(Calendar.YEAR, -1);
-        String str = "abc";
-//        str.re
 
         System.out.println(calendar.getTime());
     }
