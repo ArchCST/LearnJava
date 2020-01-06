@@ -1,7 +1,5 @@
 package Week3.Homework.Day_18;
 
-import com.sun.xml.internal.xsom.impl.SchemaImpl;
-
 import java.util.Random;
 import java.util.Scanner;
 
