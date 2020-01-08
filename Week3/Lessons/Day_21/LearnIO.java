@@ -171,9 +171,9 @@ public class LearnIO {
     }
 
     public static void learnProperties() {
-        File propertiesFile = new File("/Users/cst/git/test.properties");
-        System.out.println(propertiesFile.getAbsolutePath());
-        System.out.println(propertiesFile.exists());
+        File propertiesFile = new File("test.properties");
+//        System.out.println(propertiesFile.getAbsolutePath());
+//        System.out.println(propertiesFile.exists());
 
         // 建立 Properties 对象
         Properties properties = new Properties();
@@ -182,8 +182,6 @@ public class LearnIO {
 
         try {
             propertiesReader = new FileReader(propertiesFile);
-            // todo 问题：为什么不能放这里？
-            propertiesWriter = new FileWriter(propertiesFile);
 
             // 通过 FileReader 对象加载 properties 对象，也可用 InputStream 加载
             properties.load(propertiesReader);
@@ -194,6 +192,8 @@ public class LearnIO {
             // 写入配制信息
             properties.setProperty("mysql-password", "apassword");
             // 通过 FileWriter 保存 properties 对象到 test.properties 文件，也可用 OutputStream。
+            // 在保存前创建 Writer，避免问题
+            propertiesWriter = new FileWriter(propertiesFile);
             properties.store(propertiesWriter, "Some comments");
 
 
