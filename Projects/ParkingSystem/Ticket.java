@@ -3,7 +3,6 @@ package Projects.ParkingSystem;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class Ticket implements Serializable {
 

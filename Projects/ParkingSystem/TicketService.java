@@ -1,7 +1,6 @@
 package Projects.ParkingSystem;
 
 import java.util.Date;
-import java.util.List;
 
 public class TicketService {
 
